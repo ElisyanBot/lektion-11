@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <!--fonts-->
+        <!--Mulish: 400, 700-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <!--stylesheets-->
+    <link rel="stylesheet" href="styles/index.css">
+
     <title>Home</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="" class="logoLink">Genesis</a></div>
+            <div class="logo"><a href="index.html" class="logoLink">Genesis</a></div>
             <ul>
-                <li class="navItem"><a href="pages/projects.html" class="navLink">Projects</a></li>
-                <li class="navItem"><a href="pages/contact.html" class="navLink">Contact</a></li>
+                <li class="navItem">
+                    <a href="html/projects.html" class="navLink">Projects</a>
+                </li>
+                <li class="navItem">
+                    <a href="html/contact.html" class="navLink">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -40,51 +50,51 @@
         <div class="sectionTwo-gridContainer">
         <!-- grid-item one-->
             <div class="gridItem-one">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item two-->
             <div class="gridItem-two">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item three-->
             <div class="gridItem-three">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item four-->
             <div class="gridItem-four">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item five-->
             <div class="gridItem-five">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item six-->
             <div class="gridItem-six">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item seven-->
             <div class="gridItem-seven">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
          <!-- grid-item eight-->
             <div class="gridItem-eigth">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item nine-->
             <div class="gridItem-nine">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item ten-->
             <div class="gridItem-ten">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item eleven-->
             <div class="gridItem-eleven">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         <!-- grid-item twelve-->
             <div class="gridItem-twelve">
-                <img src="img/" alt="" class="gridImage">
+                <img src="#" alt="" class="gridImage">
             </div>
         </div>
     </section>
@@ -238,17 +248,23 @@
     <!--footer content start here!-->
 
     <footer >
-        <div class="logo"><a href="" class="logoLink">Genesis</a></div>
-        <ul>
-            <li class="navItem"><a href="pages/projects.html" class="navLink">Projects</a></li>
-            <li class="navItem"><a href="pages/contact.html" class="navLink">Contact</a></li>
-        </ul>
-
-        <ul class="socialMediaList">
-            <li class="SocialMediaLogos"><img src="img/svg/" alt="" class="socialMidiaSvgs"></li>
-            <li class="SocialMediaLogos"><img src="img/svg/" alt="intagram" class="socialMidiaSvgs"></li>
-            <li class="SocialMediaLogos"><img src="img/" alt="twitter" class="socialMidiaSvgs"></li>
-        </ul>
+        <nav class="navFooter">
+            <div class="logo"><a href="index.html" class="logoLink">Genesis</a></div>
+            <ul>
+                <li class="navItem">
+                    <a href="html/projects.html" class="navLink selectedNavLink">Projects</a>
+                </li> <!--diffrent style when selected - for esaier navigation-->
+                <li class="navItem">
+                    <a href="html/contact.html" class="navLink">Contact</a>
+                </li>
+            </ul>
+         </nav>
+            <div class="socialMediaList">
+                <svg class="SocialMediaLogos"> <use xlink:href ="svg/dribbble-logo.svg#dribbble"></use> </svg>
+                <svg class="SocialMediaLogos"><use xlink:href ="svg/instagram.svg#instagram"></use></svg>
+                <svg class="SocialMediaLogos"><use xlink:href ="svg/twitter-logo.svg#twitter"></use></svg>
+            </div>
+        
     </footer>
 </body>
 </html>

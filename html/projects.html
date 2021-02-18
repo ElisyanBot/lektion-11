@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--fonts-->
+        <!--Mulish: 400, 700-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <!--stylesheets-->
+    <link rel="stylesheet" href="../styles/projects.css">
+
+    <title>Projects</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="" class="logoLink">Genesis</a></div>
+            <div class="logo"><a href="../index.html" class="logoLink">Genesis</a></div>
             <ul>
                 <li class="navItem">
-                    <a href="pages/projects.html" class="navLink selectedNavLink">Projects</a>
+                    <a href="projects.html" class="navLink selectedNavLink">Projects</a>
                 </li> <!--diffrent style when selected - for esaier navigation-->
                 <li class="navItem">
-                    <a href="pages/contact.html" class="navLink">Contact</a>
+                    <a href="contact.html" class="navLink">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -64,21 +71,23 @@
     </section>
      <!--footer content start here!-->
      <footer>
-        <div class="logo"><a href="" class="logoLink">Genesis</a></div>
-        <ul>
-            <li class="navItem">
-                <a href="pages/projects.html" class="navLink selectedNavLink">Projects</a>
-            </li> <!--diffrent style when selected - for esaier navigation-->
-            <li class="navItem">
-                <a href="pages/contact.html" class="navLink">Contact</a>
-            </li>
-        </ul>
-
-        <ul class="socialMediaList">
-            <li class="SocialMediaLogos"><img src="img/svg/" alt="" class="socialMidiaSvgs"></li>
-            <li class="SocialMediaLogos"><img src="img/svg/" alt="intagram" class="socialMidiaSvgs"></li>
-            <li class="SocialMediaLogos"><img src="img/svg" alt="twitter" class="socialMidiaSvgs"></li>
-        </ul>
+        <nav class="navFooter">
+            <div class="logo"><a href="../index.html" class="logoLink">Genesis</a></div>
+            <ul>
+                <li class="navItem">
+                    <a href="projects.html" class="navLink selectedNavLink">Projects</a>
+                </li> <!--diffrent style when selected - for esaier navigation-->
+                <li class="navItem">
+                    <a href="contact.html" class="navLink">Contact</a>
+                </li>
+            </ul>
+         </nav>
+            <div class="socialMediaList">
+                <svg class="SocialMediaLogos"> <use xlink:href ="../svg/dribbble-logo.svg#dribbble"></use> </svg>
+                <svg class="SocialMediaLogos"><use xlink:href ="../svg/instagram.svg#instagram"></use></svg>
+                <svg class="SocialMediaLogos"><use xlink:href ="../svg/twitter-logo.svg#twitter"></use></svg>
+            </div>
+        
     </footer>
     
 </body>

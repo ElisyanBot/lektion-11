@@ -1,0 +1,44 @@
+header{
+    @include globalPageSettings (15rem);
+    @include flex(row, flex-start, center);
+    
+    nav{
+        width: 111rem;
+        margin: auto;
+
+        @include flex(row, space-between, center);
+
+        ul{
+        
+            display: flex;
+            justify-content: space-between;
+
+            width: 9rem;
+
+            .navLink{
+                font-weight: 700;
+            }
+
+            .navLink:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .selectedNavLink{
+        color: $secondTextColor;
+    }
+    
+}
+
+.logo{
+    background-image: url(../svg/Logo.svg);
+    width: 9rem;
+    height: 2rem;
+    
+    .logoLink{
+       opacity: 0;
+       font-size: 2rem;
+    }
+
+}

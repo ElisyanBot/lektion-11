@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /*1rem = 10px*/
+  font-family: 'Mulish', sans-serif;
+  /*global font - Mulish*/
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+/*overall colors*/
+/*standard tags*/
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+li {
+  list-style: none;
+}
+
+/*mixins*/
+/*overall classes*/
+.article_heading {
+  color: #111111;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.article_paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.softGreyText {
+  color: #111111;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #ffffff;
+  width: 136rem;
+  height: 15rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+header nav {
+  width: 111rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 9rem;
+}
+
+header nav ul .navLink {
+  font-weight: 700;
+}
+
+header nav ul .navLink:hover {
+  text-decoration: underline;
+}
+
+header .selectedNavLink {
+  color: #4A4FF2;
+}
+
+.logo {
+  background-image: url(../svg/Logo.svg);
+  width: 9rem;
+  height: 2rem;
+}
+
+.logo .logoLink {
+  opacity: 0;
+  font-size: 2rem;
+}
+
+footer {
+  /*look at the gobal for ref with the @mixins*/
+  background-color: #ffffff;
+  width: 136rem;
+  height: 15rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+footer .navFooter {
+  width: 95rem;
+  margin: auto 3rem auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+footer .navFooter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 9rem;
+}
+
+footer .navFooter ul .navLink {
+  font-weight: 700;
+}
+
+footer .navFooter ul .navLink:hover {
+  text-decoration: underline;
+}
+
+footer .selectedNavLink {
+  color: #4A4FF2;
+}
+
+footer .socialMediaList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 10rem;
+  margin: auto auto auto 3rem;
+}
+
+footer .socialMediaList .SocialMediaLogos {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+/*# sourceMappingURL=projects.css.map */

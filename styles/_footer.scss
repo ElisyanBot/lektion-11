@@ -1,0 +1,46 @@
+footer{
+    /*look at the gobal for ref with the @mixins*/
+    @include globalPageSettings (15rem);
+    @include flex(row, flex-start, center);
+     
+    .navFooter{
+        width: 95rem;
+        margin: auto 3rem auto auto;
+        
+
+        @include flex(row, space-between, center);
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            width: 9rem;
+
+                .navLink{
+                    font-weight: 700;
+                }
+
+                .navLink:hover{
+                    text-decoration: underline;
+                }
+
+        }
+    }
+
+    .selectedNavLink{
+        color: $secondTextColor;
+    }
+
+    .socialMediaList{
+        display: flex;
+        justify-content: space-around;
+        width: 10rem;
+        margin: auto auto auto 3rem;
+
+        .SocialMediaLogos{
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        
+    }
+}

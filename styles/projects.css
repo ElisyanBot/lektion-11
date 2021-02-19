@@ -46,9 +46,10 @@ li {
   font-size: 1.6rem;
 }
 
+/*header*/
 header {
   background-color: #ffffff;
-  width: 136rem;
+  max-width: 136rem;
   height: 15rem;
   margin: auto;
   display: -webkit-box;
@@ -111,7 +112,7 @@ header .selectedNavLink {
 }
 
 .logo {
-  background-image: url(../svg/Logo.svg);
+  background-image: url(../../svg/Logo.svg);
   width: 9rem;
   height: 2rem;
 }
@@ -121,10 +122,78 @@ header .selectedNavLink {
   font-size: 2rem;
 }
 
+/*section*/
+.sectionOne {
+  background-color: #ffffff;
+  max-width: 136rem;
+  height: 15rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+.sectionTwo {
+  background-color: #ffffff;
+  max-width: 136rem;
+  height: 15rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+.sectionThree {
+  background-color: #ffffff;
+  max-width: 136rem;
+  height: 15rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@include flex*/
+  /*fungerar som en javascript/c# funktion*/
+}
+
+/*footer*/
 footer {
   /*look at the gobal for ref with the @mixins*/
   background-color: #ffffff;
-  width: 136rem;
+  max-width: 136rem;
   height: 15rem;
   margin: auto;
   display: -webkit-box;

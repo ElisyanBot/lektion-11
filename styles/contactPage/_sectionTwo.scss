@@ -1,0 +1,13 @@
+.sectionTwo{
+    @include globalPageSettings (80rem);
+    @include flex(row, space-evenly, center);
+    
+    .sectionTwo-iframe{
+        width: 80%;
+
+        iframe{
+            border-radius: 0.5rem;
+        }
+    }
+  
+    }

@@ -42,7 +42,7 @@ li{
 
 @mixin globalPageSettings ($height) {
     background-color: #ffffff;
-    width: 136rem;
+    max-width: 136rem;
     height: $height;
     margin: auto;
 

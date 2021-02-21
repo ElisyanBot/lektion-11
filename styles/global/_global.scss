@@ -17,6 +17,8 @@ body{
 
 /*overall colors*/
 $mainTextColor: #111111;
+$softTextColor: #000000d3;
+$borderColor: #85858588;
 $secondTextColor: #4A4FF2;
 
 /*standard tags*/
@@ -27,6 +29,11 @@ a{
 
 li{
     list-style: none;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 /*mixins*/
@@ -64,7 +71,7 @@ li{
 }
 
 .softGreyText{
-    color: $mainTextColor;
+    color: $softTextColor;
     font-weight: 400;
     font-size: 1.6rem;
 }

@@ -27,6 +27,11 @@ li {
   list-style: none;
 }
 
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
 /*mixins*/
 /*overall classes*/
 .article_heading {
@@ -41,7 +46,7 @@ li {
 }
 
 .softGreyText {
-  color: #111111;
+  color: #000000d3;
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -96,11 +101,12 @@ header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 9rem;
+  width: 13rem;
 }
 
 header nav ul .navLink {
   font-weight: 700;
+  font-size: 1.4rem;
 }
 
 header nav ul .navLink:hover {
@@ -205,7 +211,7 @@ header .selectedNavLink {
 
 .contactForm textarea {
   height: 6rem;
-  border-top: 1px solid #b8b8b8;
+  border-top: 1px solid #85858588;
 }
 
 .contactForm label {
@@ -307,11 +313,12 @@ footer .navFooter ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 9rem;
+  width: 14rem;
 }
 
 footer .navFooter ul .navLink {
   font-weight: 700;
+  font-size: 1.4rem;
 }
 
 footer .navFooter ul .navLink:hover {

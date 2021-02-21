@@ -1,4 +1,36 @@
+/*projeckt page, section one*/
 .sectionOne{
-    @include globalPageSettings (15rem);
-    @include flex(row, flex-start, center);
+    @include globalPageSettings (40rem);
+    @include flex(row, space-evenly, center);
+
+        .sectionOne-article{
+            @include flex(column, space-around,flex-start);
+            height: 36rem;
+            width: 65rem;
+            margin-right: 5rem;
+        }
+
+        
+        /*information list on project page section one*/
+        .projectInformation{
+            width: 30rem;
+            height: 32rem;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(6, 1fr);
+
+            .gridItem{
+                border-bottom: 1px solid $borderColor;
+                height: 75%;
+                
+            }
+
+                .softGreyText+p{
+                    padding-left: 12%;
+                    font-weight: bold;
+                }
+
+        }
+
 }

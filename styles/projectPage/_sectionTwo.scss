@@ -1,4 +1,26 @@
+/*projeckt page section two*/
 .sectionTwo{
-    @include globalPageSettings (15rem);
-    @include flex(row, flex-start, center);
+    @include globalPageSettings (80rem);
+    @include flex(column, flex-start, center);
+
+    /*first img projectPage*/
+    
+    .sectionTwo-imgContainer{
+        max-width: 111rem;
+        height: auto;
+
+        .project-sectionTwo_img{
+            max-width: 100%;
+            height: auto;
+            }
+    }
+
+        /*img text section two project page*/
+        .sectionTwo-img_text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 111rem;
+            height: 14rem;
+        }
 }

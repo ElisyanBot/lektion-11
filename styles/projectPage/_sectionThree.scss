@@ -1,4 +1,16 @@
+/*projeckt page section three*/
 .sectionThree{
-    @include globalPageSettings (15rem);
-    @include flex(row, flex-start, center);
+    @include globalPageSettings (45rem);
+    @include flex(row, center, center);
+
+    .sectionThree-imgContaioner{
+        width: 111rem;
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+
+        img{
+            width: 31.5%;
+            height: auto;
+        }
+    }
 }

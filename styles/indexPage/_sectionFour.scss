@@ -84,9 +84,9 @@
             
                 @include flex(column, flex-start, flex-start);
 
-                p{
-                    margin-top: 2rem;
-                }
+                    p{
+                        margin-top: 2rem;
+                    }
             }
             .gridItemFour{
                 grid-column: 4/5;
@@ -103,15 +103,27 @@
 
                 @include flex(column, flex-start, flex-start);
 
-                p{
-                    margin-top: 2rem;
-                }
+                    p{
+                        margin-top: 2rem;
+                    }
             }
             .gridItemSeven{
                 grid-row: 3/4;
                 grid-column: 4/5;
                 justify-self: end;
             }
+    }
 
+    /*all of the headers in the grids are markt with gridbold or gridHeaderText,
+    the rest is markt with SoftGreyText: you can find this styleing in _global.scss*/
+    .gridBoldText{
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .gridHeaderText{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $mainTextColor;
     }
 }

@@ -46,7 +46,7 @@ p {
 }
 
 .softGreyText {
-  color: #000000d3;
+  color: #111111a4;
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -336,6 +336,8 @@ header .selectedNavLink {
   /*@include flex*/
   /*fungerar som en javascript/c# funktion*/
   /*second grid container for section four on home page*/
+  /*all of the headers in the grids are markt with gridbold or gridHeaderText,
+    the rest is markt with SoftGreyText: you can find this styleing in _global.scss*/
 }
 
 .sectionFour .sectionFour-gridContaioner {
@@ -562,6 +564,17 @@ header .selectedNavLink {
   grid-column: 4/5;
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+.sectionFour .gridBoldText {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.sectionFour .gridHeaderText {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #111111;
 }
 
 /*footer*/

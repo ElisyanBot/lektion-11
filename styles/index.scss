@@ -1,3 +1,13 @@
-@import "./styles/global/global";
-@import "./styles/globalnav";
-@import "./styles/globalfooter";
+@import "./global/global";
+
+/*header*/
+@import "./global/nav";
+
+/*sections*/
+@import "indexPage/sectionOne";
+@import "indexPage/sectionTwo";
+@import "indexPage/sectionThree";
+@import "indexPage/sectionFour";
+
+/*footer*/
+@import "./global/footer";

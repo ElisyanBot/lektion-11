@@ -1,0 +1,10 @@
+/*section two home page*/
+
+.sectionTwo{
+    @include globalPageSettings (20rem);
+    @include flex(row, space-around, center);
+
+    .gridContainer{
+        display: none;
+    }
+}

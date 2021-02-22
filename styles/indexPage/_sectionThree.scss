@@ -1,0 +1,29 @@
+.sectionThree{
+    @include globalPageSettings (30rem);
+    @include flex(row, space-around, center);
+
+    .sectionThree-article{
+        max-width: 55rem;
+        height: 11rem;
+        .sectionThree-article_boldText{
+            font-size: 2.6rem;
+        }
+        
+    }
+
+    .sectionThree-ulContainer{
+        @include flex(row, space-between, center);
+        width: 35rem;
+        height: 14rem;
+
+        
+        ul{
+            @include flex(column, space-evenly, space-evenly);
+            height: 80%;
+        }
+
+        .sectionThree-list_link:hover{
+            text-decoration: underline;
+        }
+    }
+}

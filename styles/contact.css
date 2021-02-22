@@ -122,6 +122,11 @@ header .selectedNavLink {
   height: 2rem;
 }
 
+.logoText {
+  width: 100%;
+  height: 100%;
+}
+
 /*sections*/
 /*content page section one*/
 .sectionOne {

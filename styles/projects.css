@@ -117,15 +117,9 @@ header .selectedNavLink {
   color: #4A4FF2;
 }
 
-.logo {
-  background-image: url(../../svg/Logo.svg);
-  width: 9rem;
+.logoLink {
+  width: 10rem;
   height: 2rem;
-}
-
-.logo .logoLink {
-  opacity: 0;
-  font-size: 2rem;
 }
 
 /*section*/
@@ -290,6 +284,14 @@ header .selectedNavLink {
 .sectionThree .sectionThree-imgContaioner img {
   width: 31.5%;
   height: auto;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sectionThree .sectionThree-imgContaioner img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*footer*/

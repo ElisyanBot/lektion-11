@@ -1,10 +1,86 @@
 /*section two home page*/
 
 .sectionTwo{
-    @include globalPageSettings (20rem);
+    @include globalPageSettings (200rem);
     @include flex(row, space-around, center);
 
     .gridContainer{
-        display: none;
+        display: grid;
+        max-width: 111rem;
+        max-height: 196rem;
+      
     }
+
+    .gridImage{
+        min-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        transition: 1s ease-in-out;
+    }
+        img:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+
+    .gallery{
+        max-height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(32, minmax(2rem, 4.5rem));
+        grid-gap: 1.5rem;
+      
+
+            .gridItem-one{
+                grid-row: span 7;
+                grid-column: 1/span 1;
+            }
+            .gridItem-two{
+                grid-row: span 6;
+                grid-column: 2/span 1;
+            }
+            .gridItem-three{
+                grid-row: span 10;
+            }
+            .gridItem-four{
+                grid-row: span 8;
+                grid-column: 1/span 1;
+            }
+            .gridItem-five{
+                grid-row: 7/span 7;
+                grid-column: 2/span 1;
+            }
+
+            .gridItem-six{
+                grid-row: span 7;
+            }
+
+            .gridItem-seven{
+                grid-row: span 8;
+                grid-column: 1/span 1;
+            }
+
+            .gridItem-eight{
+                grid-row: 14/span 9;
+                grid-column: 2/span 1;
+            }
+
+            .gridItem-nine{
+                grid-row: span 9;
+            }
+
+            .gridItem-ten{
+                grid-row: span 9;
+                grid-column: 1/span 1;
+            
+            }
+            .gridItem-eleven{
+                grid-row: 23/span 10;
+                grid-column: 2/span 1;
+            
+            }
+            .gridItem-twelve{
+                grid-row: span 6;
+            }
+    }
+
 }

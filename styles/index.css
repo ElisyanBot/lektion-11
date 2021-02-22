@@ -117,15 +117,9 @@ header .selectedNavLink {
   color: #4A4FF2;
 }
 
-.logo {
-  background-image: url(../../svg/Logo.svg);
-  width: 9rem;
+.logoLink {
+  width: 10rem;
   height: 2rem;
-}
-
-.logo .logoLink {
-  opacity: 0;
-  font-size: 2rem;
 }
 
 /*sections*/
@@ -219,7 +213,7 @@ header .selectedNavLink {
 .sectionTwo {
   background-color: #ffffff;
   max-width: 136rem;
-  height: 20rem;
+  height: 200rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,7 +232,114 @@ header .selectedNavLink {
 }
 
 .sectionTwo .gridContainer {
-  display: none;
+  display: -ms-grid;
+  display: grid;
+  max-width: 111rem;
+  max-height: 196rem;
+}
+
+.sectionTwo .gridImage {
+  min-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.sectionTwo img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sectionTwo .gallery {
+  max-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (minmax(2rem, 4.5rem))[32];
+      grid-template-rows: repeat(32, minmax(2rem, 4.5rem));
+  grid-gap: 1.5rem;
+}
+
+.sectionTwo .gallery .gridItem-one {
+  grid-row: span 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+.sectionTwo .gallery .gridItem-two {
+  grid-row: span 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+}
+
+.sectionTwo .gallery .gridItem-three {
+  grid-row: span 10;
+}
+
+.sectionTwo .gallery .gridItem-four {
+  grid-row: span 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+.sectionTwo .gallery .gridItem-five {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 7;
+  grid-row: 7/span 7;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+}
+
+.sectionTwo .gallery .gridItem-six {
+  grid-row: span 7;
+}
+
+.sectionTwo .gallery .gridItem-seven {
+  grid-row: span 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+.sectionTwo .gallery .gridItem-eight {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 9;
+  grid-row: 14/span 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+}
+
+.sectionTwo .gallery .gridItem-nine {
+  grid-row: span 9;
+}
+
+.sectionTwo .gallery .gridItem-ten {
+  grid-row: span 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+.sectionTwo .gallery .gridItem-eleven {
+  -ms-grid-row: 23;
+  -ms-grid-row-span: 10;
+  grid-row: 23/span 10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+}
+
+.sectionTwo .gallery .gridItem-twelve {
+  grid-row: span 6;
 }
 
 .sectionThree {

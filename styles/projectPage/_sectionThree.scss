@@ -11,6 +11,11 @@
         img{
             width: 31.5%;
             height: auto;
+            transition: 1s;
+        }
+        img:hover{
+            cursor: pointer;
+            transform: scale(1.1);
         }
     }
 }
